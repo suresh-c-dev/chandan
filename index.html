@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chandan H B — Portfolio</title>
+  <meta name="description" content="Portfolio of Chandan H B — BCA student, IoT enthusiast, and AI/ML intern. Explore projects, skills, and experience.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader"><div class="loader"></div></div>
+
+  <!-- Particle Background -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Ambient Glow -->
+  <div class="ambient-glow ambient-glow--blue"></div>
+  <div class="ambient-glow ambient-glow--indigo"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar-custom navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Chandan<span style="color:var(--highlight);">.</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="education.html">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="certifications.html">Certifications</a></li>
+          <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme"><i class="bi bi-sun"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-5 order-lg-2 text-center reveal-right">
+          <div class="hero-photo float-anim">
+            <img src="WhatsApp Image 2026-05-07 at 9.53.15 PM.jpeg" alt="Chandan H B" id="heroPhoto">
+          </div>
+        </div>
+        <div class="col-lg-7 order-lg-1 reveal-left">
+          <div class="hero-content">
+            <p class="hero-greeting">👋 Hello, I'm</p>
+            <h1 class="hero-name">Chandan H B</h1>
+            <p class="hero-tagline"><span id="typed-text"></span><span class="typed-cursor">|</span></p>
+            <p class="hero-description">Motivated and enthusiastic final year student seeking an opportunity to begin a professional career where I can apply my knowledge, improve my skills, and gain practical experience.</p>
+            <div class="d-flex flex-wrap gap-3 hero-buttons">
+              <a href="resume.html" class="btn btn-primary-custom"><i class="bi bi-eye"></i> View Resume</a>
+              <a href="Chandan.pdf" download class="btn btn-outline-custom"><i class="bi bi-download"></i> Download Resume</a>
+              <a href="contact.html" class="btn btn-outline-custom"><i class="bi bi-envelope"></i> Contact Me</a>
+            </div>
+            <div class="social-links">
+              <a href="https://github.com/chandanhb" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+              <a href="https://linkedin.com/in/Chandan-hb-76ba5b403" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+              <a href="mailto:chandanhb565@gmail.com" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-4">
+          <p class="footer-brand">Chandan H B</p>
+          <p class="text-muted mt-2" style="font-size:0.9rem;">BCA Final Year Student &amp; AI/ML Intern. Building skills one project at a time.</p>
+        </div>
+        <div class="col-lg-4">
+          <h6 class="text-uppercase mb-3" style="color:var(--text-muted);font-size:0.82rem;letter-spacing:2px;">Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h6 class="text-uppercase mb-3" style="color:var(--text-muted);font-size:0.82rem;letter-spacing:2px;">Connect</h6>
+          <div class="social-links">
+            <a href="https://github.com/chandanhb" target="_blank" rel="noopener"><i class="bi bi-github"></i></a>
+            <a href="https://linkedin.com/in/Chandan-hb-76ba5b403" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
+            <a href="mailto:chandanhb565@gmail.com"><i class="bi bi-envelope-fill"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Chandan H B. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button id="scrollTopBtn" class="scroll-top" aria-label="Scroll to top"><i class="bi bi-chevron-up"></i></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
